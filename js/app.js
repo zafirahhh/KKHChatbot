@@ -64,10 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const nameSpan = document.createElement('span');
         nameSpan.textContent = chat.name;
+        nameSpan.className = 'chat-name'; // ✅ This line is NEW
         nameSpan.style.flex = '1';
         nameSpan.addEventListener('click', () => {
-          // You can later use switchSession(group, chat, index)
-          alert(`Switched to ${chat.name}`);
+          switchSession(group, chat, index);
         });
 
         const menu = document.createElement('div');
