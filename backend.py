@@ -78,9 +78,9 @@ async def ask(request: AskRequest):
             ]
         }
 
-        res = requests.post("https://child-trend-grocery-wagner.trycloudflare.com/v1/chat/completions", json=payload)
-        res.raise_for_status()
-        return res.json()["choices"][0]["message"]["content"]
+        #res = requests.post("https://child-trend-grocery-wagner.trycloudflare.com/v1/chat/completions", json=payload)
+       # res.raise_for_status()
+        #return res.json()["choices"][0]["message"]["content"]
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"LLM error: {str(e)}")
