@@ -1,0 +1,224 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+#button-container button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#button-container button:hover {
+    background-color: #0056b3;
+}
+
+#chat-window {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#chat-window .message.user {
+    justify-content: flex-end;
+}
+
+#chat-window .message.bot {
+    justify-content: flex-start;
+}
+
+#chat-window .message .avatar {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#chat-window .message.user .avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+#chat-window .message .bubble {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#chat-window .message.bot .bubble {
+    background-color: #e6e6e6;
+}
+
+#chat-window .message.user .bubble {
+    background-color: #007bff;
+    color: white;
+}
+
+#chat-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar styles */
+aside {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+aside button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
