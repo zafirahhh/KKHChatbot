@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "question": "What is the normal range for adult heart rate?",
+        "options": ["60-100 bpm", "50-90 bpm", "70-110 bpm"],
+        "correct_answer": "60-100 bpm",
+        "explanation": "The normal resting heart rate for adults is typically between 60 and 100 beats per minute."
+    },
+    {
+        "id": 2,
+        "question": "What is the primary function of red blood cells?",
+        "options": ["Transport oxygen", "Fight infections", "Clot blood"],
+        "correct_answer": "Transport oxygen",
+        "explanation": "Red blood cells are responsible for carrying oxygen from the lungs to the rest of the body."
+    }
+]
