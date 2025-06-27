@@ -10,7 +10,7 @@ app = FastAPI()
 # === CORS ===
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://<your-username>.github.io"],  # Replace with your actual GitHub Pages link
+    allow_origins=[" https://zafirahhh.github.io/KKHChatbot/"],  # Replace with your actual GitHub Pages link
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
