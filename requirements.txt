@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+nltk
+torch
+sentence-transformers
+scikit-learn
+regex
+requests
+PyPDF2
+jinja2
+python-dateutil
+pandas
+tqdm
