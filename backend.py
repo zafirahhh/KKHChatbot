@@ -132,6 +132,17 @@ async def evaluate(request: QuizEvaluateRequest):
 async def ping():
     return {"status": "online"}
 
+# === Query LM Studio ===
+def query_lm_studio(prompt):
+    response = requests.post(
+        "http://host.docker.internal:1234/v1/chat/completions",
+        json={
+            "model": "your-model-name",  # e.g., openhermes
+            "messages": [{"role": "user", "content": prompt}]
+        }
+    )
+    return response.json()['choices'][0]['message']['content']
+
 # === Run Locally ===
 if __name__ == "__main__":
     import uvicorn
