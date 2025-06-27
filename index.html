@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KKH Nursing Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>🤖 KKH Nursing Chatbot</h1>
+      <div class="controls">
+        <button id="new-chat">+ New Chat</button>
+        <button id="clear-chat">🗑 Clear Chat</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="chat-window" class="chat-window"></section>
+      
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" required />
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </main>
+
+    <aside>
+      <h2>🧪 Quiz Mode</h2>
+      <div id="quiz-box"></div>
+
+      <h2>💧 Fluid Calculator</h2>
+      <form id="calc-form">
+        <label>Weight (kg): <input type="number" id="weight" required /></label>
+        <label>Age (years): <input type="number" id="age" required /></label>
+        <label>Scenario:
+          <select id="scenario">
+            <option value="maintenance">Maintenance</option>
+            <option value="resuscitation">Resuscitation</option>
+            <option value="dehydration">Dehydration</option>
+          </select>
+        </label>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="calc-result"></div>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
