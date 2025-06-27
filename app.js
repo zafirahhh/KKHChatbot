@@ -1,6 +1,6 @@
 // --- Sidebar Grouped Sessions UI Logic for new sidebar structure ---
-const BACKEND_URL_FINAL = 'https://dev-nursingchatbot.fly.dev/ask';
-const QUIZ_URL_FINAL = 'https://dev-nursingchatbot.fly.dev/quiz';
+const BACKEND_URL = "https://dev-nursingchatbot.fly.dev/ask";
+const QUIZ_URL = "https://dev-nursingchatbot.fly.dev/quiz";
 const QUIZ_EVAL_URL_FINAL = 'https://dev-nursingchatbot.fly.dev/quiz/evaluate';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadHistory();
     if (group.category === 'Quiz') {
       // Load quiz questions for this session
-      fetch(`${QUIZ_URL_FINAL}?n=5`)
+      fetch(`${QUIZ_URL}?n=5`)
         .then(res => res.json())
         .then(data => {
           if (data.quiz) {
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
     appendGroupedMessage('user', userText);
     userInput.value = '';
     const isQuiz = activeSessionId.startsWith('quiz');
-    const url = isQuiz ? QUIZ_URL_FINAL : BACKEND_URL_FINAL;
+    const url = isQuiz ? QUIZ_URL_FINAL : BACKEND_URL;
     const payload = isQuiz ? { prompt: userText } : { question: userText, session: activeSessionId };
     console.log('[Submit to]', url);
     console.log('[Payload]', payload);

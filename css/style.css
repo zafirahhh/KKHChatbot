@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter:400,600|Open+Sans:400,600&display=swap');
 
 /* --- ChatGPT-like UI overhaul --- */
@@ -30,8 +31,9 @@ html, body {
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    background: #f7f7f8;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f4f6fa;
     color: #23272b;
     font-size: 1.05rem;
     min-height: 100vh;
